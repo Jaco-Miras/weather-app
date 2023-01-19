@@ -145,7 +145,7 @@ const Weather = () => {
         <div className="h-full relative lex items-center justify-between p-2">
           <input
             onChange={(e) => handleInput(e)}
-            className="flex-1 bg-transparent outline-none absolute placeholder:text-white text-white text-[15px] font-light pl-6 h-full"
+            className="flex-1 bg-transparent outline-none placeholder:text-white text-white text-[15px] font-light pl-6 h-full"
             type="text"
             placeholder="Search city or country"
           />
