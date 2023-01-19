@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Weather from "./component/Weather";
 
 const App = () => {
-  return <div>react app</div>;
+  return (
+    <div>
+      <Weather />
+    </div>
+  );
 };
 
 export default App;
