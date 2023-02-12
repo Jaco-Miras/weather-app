@@ -135,12 +135,12 @@ const Weather = () => {
   return (
     <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center">
       {errorMsg && (
-        <div className="w-[460px] text-center max-w-[100vw] md:-w-[450px] bg-[#25C3FF] text-white top-2 lg:top-10 rounded-full p-4 capitalize my-2">{`${errorMsg.response.data.message}`}</div>
+        <div className="w-[90%] text-center max-w-[100vw] md:w-[450px] bg-[#25C3FF] text-white top-2 lg:top-10 rounded-full p-4 capitalize my-2">{`${errorMsg.response.data.message}`}</div>
       )}
       <form
         className={`${
           animate ? "animate-shake" : "animate-none"
-        } h-16 bg-black/50 w-full max-w-[400px] rounded-full backdrop-blur-[32px] mb-2 md:max-w-[460px]`}
+        } h-16 bg-black/50 w-[90%] max-w-[400px] rounded-full backdrop-blur-[32px] mb-2 md:max-w-[460px]`}
       >
         <div className="h-full relative w-full flex items-center justify-between p-2">
           <input
@@ -158,7 +158,7 @@ const Weather = () => {
         </div>
       </form>
       {/* card */}
-      <div className="w-full max-w-[440px] md:max-w-[480px] bg-black/40 max-h-[440px] md:max-h-[460px] text-white rounded-[30px] backdrop-blur-[32px] py-10 px-4 md:py-12 md:px-6">
+      <div className="w-[90%] max-w-[440px] md:max-w-[480px] bg-black/40 max-h-[440px] md:max-h-[460px] text-white rounded-[30px] backdrop-blur-[32px] py-10 px-4 md:py-12 md:px-6">
         {loading ? (
           <div className="w-full h-full flex justify-center items-center">
             <ImSpinner8 className="text-white text-5xl animate-spin" />
@@ -243,7 +243,7 @@ const Weather = () => {
                     <BsWind />
                   </div>
                   <div>
-                    Wind <span className="ml-2">{data.wind.speed}m/s</span>
+                    Wind<span className="ml-2">{data.wind.speed}m/s</span>
                   </div>
                 </div>
               </div>
