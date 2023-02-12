@@ -133,7 +133,7 @@ const Weather = () => {
   const date = new Date();
 
   return (
-    <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center overflow-hidden">
+    <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center overflow-auto">
       {errorMsg && (
         <div className="w-[90%] text-center max-w-[100vw] md:w-[450px] bg-[#25C3FF] text-white top-2 lg:top-10 rounded-full p-4 capitalize my-2">{`${errorMsg.response.data.message}`}</div>
       )}
