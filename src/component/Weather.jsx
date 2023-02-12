@@ -133,7 +133,7 @@ const Weather = () => {
   const date = new Date();
 
   return (
-    <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center">
+    <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center overflow-hidden">
       {errorMsg && (
         <div className="w-[90%] text-center max-w-[100vw] md:w-[450px] bg-[#25C3FF] text-white top-2 lg:top-10 rounded-full p-4 capitalize my-2">{`${errorMsg.response.data.message}`}</div>
       )}
@@ -142,7 +142,7 @@ const Weather = () => {
           animate ? "animate-shake" : "animate-none"
         } h-16 bg-black/50 w-[90%] max-w-[400px] rounded-full backdrop-blur-[32px] mb-2 md:max-w-[460px]`}
       >
-        <div className="h-full relative w-full flex items-center justify-between p-2">
+        <div className="h-full relative w-[90%] md:w-full flex items-center justify-between p-2">
           <input
             onChange={(e) => handleInput(e)}
             className="flex-1 bg-transparent outline-none placeholder:text-white text-white text-[15px] font-light pl-6 h-full"
